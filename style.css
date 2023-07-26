@@ -22,7 +22,7 @@ img{
     text-align: center;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 70vh;
 }
 
 .ring{
@@ -64,10 +64,10 @@ img{
     text-align: center;
     justify-content: center;
     align-items: center;
-    top: 0%;
+    height: 140px;
     color: #14ffe9;
     font-size: 25px;
-    letter-spacing: 30px;
+    letter-spacing: 20px;
     filter: blur(.6px);
     text-shadow: 0 0 10px #14ffe9,
                  0 0 20px #14ffe9,
