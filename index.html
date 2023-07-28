@@ -7,12 +7,17 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>LOADING</title>
     <link rel="icon" href="icon/mask.ico">
+    <script src="script.js"> </script>
   </head>
   <body>
-    <audio src="memory.mp3" controls autoplay>
-      <p>Sem suporte ao audio</p>
+        <!-- Áudio -->
+    <audio id="audio" autoplay loop>
+      <source src="dust.mp3" type="audio/mpeg">
     </audio>
-
+    <!-- Botão de Play -->
+    <div class="buttonMusic">
+    <button id="playButton" class="glow-on-hover" type="button">Play</button>
+    </div>
     <div class="center" ">
         <div class="ring"></div>
         <span> <img src="cfs.png" alt="cfs"></span>
