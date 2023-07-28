@@ -44,8 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
       setPlayButtonIcon(); // Atualiza o ícone do botão ao pausar
     }
   });
-
-  
   nextButton.addEventListener("click", function () {
     audioElement.pause();
     currentMusicIndex++;
@@ -54,6 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     playCurrentMusic();
   });
-  
+  audioElement.addEventListener("ended", function () {
+    currentMusicIndex++;
+    if (currentMusicIndex >= musicList.length) {
+      currentMusicIndex = 0;
+    }
+    playCurrentMusic();
+  });
     window.addEventListener("beforeunload", setMusicIndexToLocalStorage);
   });
