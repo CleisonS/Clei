@@ -8,15 +8,22 @@
     <title>LOADING</title>
     <link rel="icon" href="icon/mask.ico">
     <script src="script.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   </head>
   <body>
         <!-- Áudio -->
     <audio id="audio" autoplay loop>
-      <source src="dust.mp3" type="audio/mpeg">
+      <source src="music/dust.mp3" type="audio/mpeg">
     </audio>
     <!-- Botão de Play -->
     <div class="buttonMusic">
-    <button id="playButton" class="glow-on-hover" type="button">Play</button>
+    <button id="playButton"  class="glow-on-hover" type="button">
+      <i class="fas fa-play"></i> <!-- Ícone de Play -->
+      <i class="fas fa-pause"></i> <!-- Ícone de Pause --></button>
+    <button id="nextButton" class="glow-on-hover" type="button">
+       <i class="fas fa-forward"></i>
+    </button>
     </div>
     <div class="center" ">
         <div class="ring"></div>
